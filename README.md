@@ -6,7 +6,7 @@ It plots out recent tweets within a 2-mile radius of you on a map.
 Due to search API limitations, only tweets from the past 7 days are considered and only tweets with geolocation information explicitly specified by the user are plotted.
 
 ## See it in action
-[Live Demo](https://dashboard.heroku.com/apps/lit-gorge-44309/settings)
+[Live Demo](https://lit-gorge-44309.herokuapp.com)
 
 ## Running the code
 
