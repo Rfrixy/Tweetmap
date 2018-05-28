@@ -45,9 +45,11 @@ app.get('/data/:lat&:lng',(req,res)=>{
         if(x.coordinates)
         {
           obj=Object.assign({id:x.id},obj);
-          if(x.user.profile_image_url)
-            obj=Object.assign({img:x.user.profile_image_url},obj);
+          if(x.user.profile_image_url){
+            let im_url = "https" + x.user.profile_image_url.substring(4);
+            obj=Object.assign({img:im_url},obj);
 
+         }
           obj=Object.assign({screen_name:x.user.screen_name},obj);
           obj=Object.assign({id_str:x.id_str},obj);
           obj=Object.assign({coords: x.coordinates.coordinates},obj);
