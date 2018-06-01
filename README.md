@@ -12,7 +12,7 @@ Due to search API limitations, only tweets from the past 7 days are considered a
 
 The app is made primarily using nodejs, express and handlebars (templating engine) - running this shiuld be realtively simple.
 Download the files, navigate to the root directory in your command line.
-``` npm i --save```
+``` npm i```
 but before we can run 'node server.js',
 You will need your own keys for accessing the twitter APIs and the google maps API.
 From twitter you will need a consumer key, secret key and a bearer token.
